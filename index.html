@@ -605,7 +605,7 @@
     </div>
 
     <!-- Import the animal database -->
-    <script src="data/animalDatabase.js"></script>
+    <script src="./data/animalDatabase.js"></script>
     
     <script>
         // Application state
@@ -619,27 +619,34 @@
         // Initialize the application
         function init() {
             try {
-                // Check if animalDatabase is loaded
-                if (typeof animalDatabase === 'undefined') {
-                    showError('Failed to load animal database. Please ensure data/animalDatabase.js is accessible.');
-                    return;
-                }
-
-                // Copy the database to local state
-                animals = [...animalDatabase];
-                filteredAnimals = [...animals];
-
-                // Initialize the UI
-                populateFilterOptions();
-                updateStats();
-                renderAnimals();
-                renderPagination();
-                renderLeaderboard();
-                setupEventListeners();
-
+                // Add timeout to allow script to load
+                setTimeout(() => {
+                    // Check if animalDatabase is loaded
+                    if (typeof animalDatabase === 'undefined') {
+                        console.error('animalDatabase not found. Checking script path...');
+                        showError('Failed to load animal database. Please check that data/animalDatabase.js exists and is accessible.');
+                        return;
+                    }
+        
+                    console.log('Database loaded with', animalDatabase.length, 'animals');
+                    
+                    // Copy the database to local state
+                    animals = [...animalDatabase];
+                    filteredAnimals = [...animals];
+        
+                    // Initialize the UI
+                    populateFilterOptions();
+                    updateStats();
+                    renderAnimals();
+                    renderPagination();
+                    renderLeaderboard();
+                    setupEventListeners();
+        
+                }, 100); // Small delay to ensure script loads
+        
             } catch (error) {
                 console.error('Initialization error:', error);
-                showError('Failed to initialize the application. Please refresh the page.');
+                showError('Failed to initialize the application: ' + error.message);
             }
         }
 
@@ -998,16 +1005,23 @@
         `;
         document.head.appendChild(style);
 
+        // Multiple initialization attempts
+        function attemptInit() {
+            if (typeof animalDatabase !== 'undefined') {
+                init();
+            } else {
+                console.log('Waiting for database to load...');
+                setTimeout(attemptInit, 200);
+            }
+        }
+        
         // Initialize the application when the page loads
-        document.addEventListener('DOMContentLoaded', init);
-
-        // Fallback initialization for older browsers
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
+            document.addEventListener('DOMContentLoaded', attemptInit);
         } else {
-            init();
+            attemptInit();
         }
     </script>
 </body>
 </html>
-                
+
