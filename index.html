@@ -56,6 +56,7 @@ er<!DOCTYPE html>
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            overflow-x: hidden;
         }
 
         .header {
@@ -172,6 +173,8 @@ er<!DOCTYPE html>
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 25px;
             margin-bottom: 40px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .animal-card {
@@ -182,6 +185,9 @@ er<!DOCTYPE html>
             transition: all 0.3s ease;
             cursor: pointer;
             backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .animal-card:hover {
@@ -387,7 +393,7 @@ er<!DOCTYPE html>
 
         @media (max-width: 768px) {
             .container {
-                padding: 15px;
+                padding: 10px; /* Reduced from 15px */
             }
             
             .controls {
@@ -400,12 +406,18 @@ er<!DOCTYPE html>
             }
             
             .animal-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                grid-template-columns: 1fr; /* Single column on mobile */
+                gap: 15px; /* Reduced gap */
+                padding: 0 5px; /* Add small horizontal padding */
+            }
+            
+            .animal-card {
+                margin: 0; /* Ensure no extra margins */
+                padding: 20px; /* Slightly reduce padding */
             }
             
             .stats {
-                gap: 20px;
+                gap: 15px; /* Reduced from 20px */
             }
             
             .ranking-categories {
