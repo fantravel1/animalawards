@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Animals in the World - Save Earth's Animals for Mars</title>
+    <meta name="description" content="Vote for Earth's most worthy animals to join humanity's journey to Mars. Comprehensive animal catalog with rankings across hundreds of criteria.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF6B6B;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-container {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px 12px 50px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #666;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        select {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .animal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .animal-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .animal-emoji {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+        }
+
+        .animal-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .animal-category {
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .animal-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #4ECDC4;
+        }
+
+        .voting-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .vote-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E88);
+            color: white;
+        }
+
+        .vote-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .vote-count {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .rankings-panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .rankings-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .ranking-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .ranking-category {
+            padding: 15px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .ranking-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .ranking-category.active {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+        }
+
+        .leaderboard {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .leaderboard-item:hover {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        .rank {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF6B6B;
+            margin-right: 20px;
+            min-width: 40px;
+        }
+
+        .leaderboard-emoji {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+        .leaderboard-info {
+            flex: 1;
+        }
+
+        .leaderboard-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .leaderboard-score {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+
+        .page-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .page-btn:hover, .page-btn.active {
+            background: #FF6B6B;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            float: right;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .close:hover {
+            color: #FF6B6B;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            .controls { flex-direction: column; align-items: stretch; }
+            .filters { justify-content: center; }
+            .animal-grid { grid-template-columns: 1fr; gap: 15px; }
+            .animal-card { padding: 20px; }
+            .stats { gap: 15px; }
+            .ranking-categories { grid-template-columns: 1fr; }
+        }
+
+        @keyframes voteAnimation {
+            0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+            100% { opacity: 0; transform: translate(-50%, -70%) scale(1); }
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Ultimate Animal Catalog 🌍</h1>
+            <h2 style="font-size: 1.4rem; color: #666; margin-bottom: 20px; font-weight: 400;">Interactive Species Database & Mars Colonization Voting Platform</h2>
+            <p>Help save Earth's most precious creatures for humanity's journey to Mars</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="totalAnimals">-</div>
+                    <div class="stat-label">Species Cataloged</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="totalVotes">-</div>
+                    <div class="stat-label">Votes Cast</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500</div>
+                    <div class="stat-label">Ark Spots Available</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="rankings-panel">
+                <h2 class="rankings-title">🏆 Animal Rankings Dashboard</h2>
+                <div class="ranking-categories">
+                    <div class="ranking-category active" data-category="overall">Overall Mars Readiness</div>
+                    <div class="ranking-category" data-category="intelligence">Intelligence Quotient</div>
+                    <div class="ranking-category" data-category="adaptability">Adaptability Score</div>
+                    <div class="ranking-category" data-category="cuteness">Cuteness Factor</div>
+                    <div class="ranking-category" data-category="survival">Survival Skills</div>
+                    <div class="ranking-category" data-category="social">Social Compatibility</div>
+                </div>
+                <div class="leaderboard" id="leaderboard"></div>
+            </section>
+
+            <section class="controls">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search animals by name, habitat, or characteristics...">
+                </div>
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                    <select id="habitatFilter">
+                        <option value="">All Habitats</option>
+                    </select>
+                    <select id="sortBy">
+                        <option value="votes">Most Votes</option>
+                        <option value="name">Alphabetical</option>
+                        <option value="intelligence">Intelligence</option>
+                        <option value="adaptability">Adaptability</option>
+                        <option value="cuteness">Cuteness Factor</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="animal-grid" id="animalGrid"></section>
+            <nav class="pagination" id="pagination"></nav>
+        </main>
+    </div>
+
+    <div class="modal" id="animalModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="data/animalDatabase.js"></script>
+    <script>
+        // Simple app state
+        let animals = [];
+        let filteredAnimals = [];
+        let currentPage = 1;
+        let currentRanking = 'overall';
+        let userVotes = new Set();
+        const itemsPerPage = 8;
+
+        // Wait for database to load, then start
+        function startApp() {
+            if (typeof animalDatabase !== 'undefined') {
+                animals = animalDatabase;
+                filteredAnimals = [...animals];
+                setupApp();
+            } else {
+                setTimeout(startApp, 100);
+            }
+        }
+
+        function setupApp() {
+            updateStats();
+            populateFilters();
+            renderAll();
+            addEventListeners();
+        }
+
+        function updateStats() {
+            const totalVotes = animals.reduce((sum, animal) => sum + animal.votes, 0);
+            document.getElementById('totalAnimals').textContent = animals.length;
+            document.getElementById('totalVotes').textContent = totalVotes.toLocaleString();
+        }
+
+        function populateFilters() {
+            const categories = [...new Set(animals.map(a => a.category))];
+            const habitats = [...new Set(animals.map(a => a.habitat))];
+            
+            const categorySelect = document.getElementById('categoryFilter');
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                categorySelect.appendChild(option);
+            });
+
+            const habitatSelect = document.getElementById('habitatFilter');
+            habitats.forEach(hab => {
+                const option = document.createElement('option');
+                option.value = hab;
+                option.textContent = hab;
+                habitatSelect.appendChild(option);
+            });
+        }
+
+        function renderAll() {
+            renderAnimals();
+            renderLeaderboard();
+            renderPagination();
+        }
+
+        function renderAnimals() {
+            const grid = document.getElementById('animalGrid');
+            const start = (currentPage - 1) * itemsPerPage;
+            const pageAnimals = filteredAnimals.slice(start, start + itemsPerPage);
+
+            grid.innerHTML = pageAnimals.map(animal => `
+                <div class="animal-card" onclick="showModal(${animal.id})">
+                    <div class="animal-emoji">${animal.emoji}</div>
+                    <h3 class="animal-name">${animal.name}</h3>
+                    <div class="animal-category">${animal.category} • ${animal.habitat}</div>
+                    
+                    <div class="animal-stats">
+                        <div class="stat-item">
+                            <span>Intelligence</span>
+                            <span class="stat-value">${animal.intelligence}/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Adaptability</span>
+                            <span class="stat-value">${animal.adaptability}/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Cuteness</span>
+                            <span class="stat-value">${animal.cuteness}/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Survival</span>
+                            <span class="stat-value">${animal.survival}/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="voting-section">
+                        <button class="vote-button" onclick="event.stopPropagation(); vote(${animal.id})">
+                            🚀 Vote for Mars
+                        </button>
+                        <span class="vote-count">${animal.votes.toLocaleString()} votes</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderLeaderboard() {
+            const board = document.getElementById('leaderboard');
+            let sorted = [...animals];
+            
+            if (currentRanking === 'overall') {
+                sorted = sorted.map(a => ({
+                    ...a,
+                    score: Math.round((a.intelligence + a.adaptability + a.survival + a.usefulness) / 4)
+                })).sort((a, b) => b.score - a.score);
+            } else {
+                sorted.sort((a, b) => b[currentRanking] - a[currentRanking]);
+            }
+
+            board.innerHTML = sorted.slice(0, 10).map((animal, i) => `
+                <div class="leaderboard-item" onclick="showModal(${animal.id})">
+                    <div class="rank">#${i + 1}</div>
+                    <div class="leaderboard-emoji">${animal.emoji}</div>
+                    <div class="leaderboard-info">
+                        <div class="leaderboard-name">${animal.name}</div>
+                        <div class="leaderboard-score">
+                            ${animal.score || animal[currentRanking]}/100 • ${animal.votes.toLocaleString()} votes
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredAnimals.length / itemsPerPage);
+            const pagination = document.getElementById('pagination');
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            pagination.innerHTML = Array.from({length: totalPages}, (_, i) => `
+                <button class="page-btn ${i + 1 === currentPage ? 'active' : ''}" 
+                        onclick="goToPage(${i + 1})">${i + 1}</button>
+            `).join('');
+        }
+
+        function addEventListeners() {
+            document.getElementById('searchInput').oninput = handleSearch;
+            document.getElementById('categoryFilter').onchange = handleFilter;
+            document.getElementById('habitatFilter').onchange = handleFilter;
+            document.getElementById('sortBy').onchange = handleSort;
+            
+            document.querySelectorAll('.ranking-category').forEach(cat => {
+                cat.onclick = () => {
+                    document.querySelector('.ranking-category.active').classList.remove('active');
+                    cat.classList.add('active');
+                    currentRanking = cat.dataset.category;
+                    renderLeaderboard();
+                };
+            });
+
+            document.querySelector('.close').onclick = closeModal;
+            document.getElementById('animalModal').onclick = (e) => {
+                if (e.target.id === 'animalModal') closeModal();
+            };
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            filteredAnimals = animals.filter(animal => 
+                animal.name.toLowerCase().includes(query) ||
+                animal.category.toLowerCase().includes(query) ||
+                animal.habitat.toLowerCase().includes(query)
+            );
+            currentPage = 1;
+            renderAll();
+        }
+
+        function handleFilter() {
+            const category = document.getElementById('categoryFilter').value;
+            const habitat = document.getElementById('habitatFilter').value;
+            
+            filteredAnimals = animals.filter(animal => 
+                (!category || animal.category === category) &&
+                (!habitat || animal.habitat === habitat)
+            );
+            currentPage = 1;
+            renderAll();
+        }
+
+        function handleSort() {
+            const sortBy = document.getElementById('sortBy').value;
+            if (sortBy === 'name') {
+                filteredAnimals.sort((a, b) => a.name.localeCompare(b.name));
+            } else {
+                filteredAnimals.sort((a, b) => b[sortBy] - a[sortBy]);
+            }
+            renderAll();
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            renderAll();
+        }
+
+        function vote(animalId) {
+            if (userVotes.has(animalId)) {
+                showMessage("Already voted for this animal!");
+                return;
+            }
+            
+            const animal = animals.find(a => a.id === animalId);
+            if (animal) {
+                animal.votes++;
+                userVotes.add(animalId);
+                updateStats();
+                renderAll();
+                showMessage("🚀 Vote cast for Mars mission!");
+            }
+        }
+
+        function showMessage(text) {
+            const msg = document.createElement('div');
+            msg.textContent = text;
+            msg.style.cssText = `
+                position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                background: #FF6B6B; color: white; padding: 15px 25px; border-radius: 25px;
+                font-weight: bold; z-index: 10000; animation: voteAnimation 1s ease-out forwards;
+            `;
+            document.body.appendChild(msg);
+            setTimeout(() => msg.remove(), 1000);
+        }
+
+        function showModal(animalId) {
+            const animal = animals.find(a => a.id === animalId);
+            if (!animal) return;
+
+            document.getElementById('modalContent').innerHTML = `
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="font-size: 5rem; margin-bottom: 15px;">${animal.emoji}</div>
+                    <h2 style="margin-bottom: 10px;">${animal.name}</h2>
+                    <p style="color: #666; font-style: italic;">${animal.category} • ${animal.habitat}</p>
+                    <p style="color: #FF6B6B; font-weight: bold; font-size: 1.2rem;">${animal.votes.toLocaleString()} Mars Votes</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="text-align: center; padding: 15px; background: rgba(0,0,0,0.05); border-radius: 10px;">
+                        <div style="font-size: 2rem; color: #4ECDC4; font-weight: bold;">${animal.intelligence}</div>
+                        <div style="font-size: 0.9rem; color: #666;">Intelligence</div>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: rgba(0,0,0,0.05); border-radius: 10px;">
+                        <div style="font-size: 2rem; color: #4ECDC4; font-weight: bold;">${animal.adaptability}</div>
+                        <div style="font-size: 0.9rem; color: #666;">Adaptability</div>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: rgba(0,0,0,0.05); border-radius: 10px;">
+                        <div style="font-size: 2rem; color: #4ECDC4; font-weight: bold;">${animal.cuteness}</div>
+                        <div style="font-size: 0.9rem; color: #666;">Cuteness</div>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: rgba(0,0,0,0.05); border-radius: 10px;">
+                        <div style="font-size: 2rem; color: #4ECDC4; font-weight: bold;">${animal.survival}</div>
+                        <div style="font-size: 0.9rem; color: #666;">Survival</div>
+                    </div>
+                </div>
+
+                ${animal.facts ? `
+                <div style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 15px;">🔬 Fascinating Facts</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        ${animal.facts.map(fact => `
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);">✨ ${fact}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${animal.conservation ? `
+                <div style="margin-bottom: 25px;">
+                    <h3 style="margin-bottom: 10px;">🌍 Conservation Status</h3>
+                    <p style="padding: 10px; background: rgba(255, 107, 107, 0.1); border-radius: 8px; color: #666;">
+                        ${animal.conservation}
+                    </p>
+                </div>
+                ` : ''}
+
+                <div style="text-align: center;">
+                    <button onclick="vote(${animal.id}); closeModal();" 
+                            style="padding: 15px 30px; background: linear-gradient(45deg, #FF6B6B, #FF8E88); 
+                                   color: white; border: none; border-radius: 25px; font-weight: bold; 
+                                   font-size: 1.1rem; cursor: pointer;">
+                        🚀 Vote for Mars Mission!
+                    </button>
+                </div>
+            `;
+            
+            document.getElementById('animalModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('animalModal').style.display = 'none';
+        }
+
+        // Start the app
+        startApp();
+    </script>
+</body>
+</html>
