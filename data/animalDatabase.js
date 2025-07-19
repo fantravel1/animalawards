@@ -1414,28 +1414,6 @@ const animalDatabase = [
         conservation: "Stable"
     },
     {
-        id: 65,
-        name: "Pangolin",
-        emoji: "🦔",
-        category: "Mammals",
-        habitat: "Various",
-        votes: 2123,
-        intelligence: 65,
-        adaptability: 75,
-        cuteness: 85,
-        survival: 85,
-        social: 40,
-        size: 75,
-        usefulness: 80,
-        facts: [
-            "Armored mammal",
-            "Insectivore specialist",
-            "Defensive strategies",
-            "Conservation priority"
-        ],
-        conservation: "Critically Endangered"
-    },
-    {
         id: 66,
         name: "Ibex",
         emoji: "🐐",
@@ -1610,28 +1588,6 @@ const animalDatabase = [
             "Mermaid legend inspiration"
         ],
         conservation: "Vulnerable"
-    },
-    {
-        id: 74,
-        name: "Pangolin",
-        emoji: "🦔",
-        category: "Mammals",
-        habitat: "Various",
-        votes: 1890,
-        intelligence: 65,
-        adaptability: 75,
-        cuteness: 85,
-        survival: 85,
-        social: 40,
-        size: 75,
-        usefulness: 80,
-        facts: [
-            "Scaled armor protection",
-            "Ant-eating specialist",
-            "Rolling defense mechanism",
-            "Unique mammalian trait"
-        ],
-        conservation: "Critically Endangered"
     },
     {
         id: 75,
