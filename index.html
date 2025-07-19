@@ -762,12 +762,13 @@
 
         function renderAnimals() {
             const grid = document.getElementById('animalGrid');
-            const grid = document.getElementById('animalGrid');
+            
             // Safety check - make sure element exists
             if (!grid) {
                 console.error('animalGrid element not found');
                 return;
             }
+            
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageAnimals = filteredAnimals.slice(start, end);
