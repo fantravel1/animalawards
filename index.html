@@ -762,6 +762,12 @@
 
         function renderAnimals() {
             const grid = document.getElementById('animalGrid');
+            const grid = document.getElementById('animalGrid');
+            // Safety check - make sure element exists
+            if (!grid) {
+                console.error('animalGrid element not found');
+                return;
+            }
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageAnimals = filteredAnimals.slice(start, end);
@@ -827,6 +833,13 @@
 
         function renderLeaderboard() {
             const leaderboard = document.getElementById('leaderboard');
+
+            // Safety check
+            if (!leaderboard) {
+                console.error('leaderboard element not found');
+                return;
+            }
+            
             let sortedAnimals = [...animals];
             
             if (currentRanking === 'overall') {
@@ -1006,12 +1019,32 @@
         document.head.appendChild(style);
 
         // Multiple initialization attempts
+        // Robust initialization that waits for both DOM and database
         function attemptInit() {
-            if (typeof animalDatabase !== 'undefined') {
+            console.log('Attempting to initialize...');
+            console.log('Document ready:', document.readyState);
+            console.log('Database available:', typeof animalDatabase !== 'undefined');
+            console.log('animalGrid exists:', !!document.getElementById('animalGrid'));
+            
+            // Check if everything we need is ready
+            const isDOMReady = document.readyState === 'complete' || document.readyState === 'interactive';
+            const isDatabaseReady = typeof animalDatabase !== 'undefined' && Array.isArray(animalDatabase) && animalDatabase.length > 0;
+            const areElementsReady = document.getElementById('animalGrid') && document.getElementById('leaderboard');
+            
+            if (isDOMReady && isDatabaseReady && areElementsReady) {
+                console.log('Everything ready, initializing...');
                 init();
             } else {
-                console.log('Waiting for database to load...');
-                setTimeout(attemptInit, 200);
+                console.log('Not ready yet, retrying...');
+                if (!window.initAttempts) window.initAttempts = 0;
+                window.initAttempts++;
+                
+                if (window.initAttempts < 50) {
+                    setTimeout(attemptInit, 200);
+                } else {
+                    console.error('Failed to initialize after 10 seconds');
+                    showError('Failed to initialize the application. Please refresh the page.');
+                }
             }
         }
         
