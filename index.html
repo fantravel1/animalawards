@@ -605,7 +605,7 @@
     </div>
 
     <!-- Import the animal database -->
-    <script src="./data/animalDatabase.js"></script>
+    <script src="data/animalDatabase.js"></script>
     
     <script>
         // Application state
@@ -1013,6 +1013,56 @@
                 console.log('Waiting for database to load...');
                 setTimeout(attemptInit, 200);
             }
+        }
+        
+        // Create AnimalDatabase utility object if it doesn't exist
+        if (typeof AnimalDatabase === 'undefined' && typeof animalDatabase !== 'undefined') {
+            window.AnimalDatabase = {
+                getAll: () => animalDatabase,
+                getById: (id) => animalDatabase.find(animal => animal.id === id),
+                search: (query) => {
+                    const searchTerm = query.toLowerCase();
+                    return animalDatabase.filter(animal => 
+                        animal.name.toLowerCase().includes(searchTerm) ||
+                        animal.category.toLowerCase().includes(searchTerm) ||
+                        animal.habitat.toLowerCase().includes(searchTerm) ||
+                        animal.facts.some(fact => fact.toLowerCase().includes(searchTerm))
+                    );
+                },
+                sortBy: (criteria, ascending = false) => {
+                    const sorted = [...animalDatabase].sort((a, b) => {
+                        if (criteria === 'name') {
+                            return ascending ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+                        }
+                        return ascending ? a[criteria] - b[criteria] : b[criteria] - a[criteria];
+                    });
+                    return sorted;
+                },
+                getMarsReadinessScore: (animal) => {
+                    return Math.round((animal.intelligence + animal.adaptability + animal.survival + animal.usefulness) / 4);
+                },
+                getMarsCandidates: () => {
+                    return animalDatabase
+                        .map(animal => ({
+                            ...animal,
+                            marsScore: window.AnimalDatabase.getMarsReadinessScore(animal)
+                        }))
+                        .sort((a, b) => b.marsScore - a.marsScore);
+                },
+                getStats: () => {
+                    const total = animalDatabase.length;
+                    const totalVotes = animalDatabase.reduce((sum, animal) => sum + animal.votes, 0);
+                    const categories = [...new Set(animalDatabase.map(animal => animal.category))];
+                    const habitats = [...new Set(animalDatabase.map(animal => animal.habitat))];
+                    
+                    return {
+                        totalAnimals: total,
+                        totalVotes,
+                        categoryList: categories,
+                        habitatList: habitats
+                    };
+                }
+            };
         }
         
         // Initialize the application when the page loads
