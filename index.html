@@ -622,6 +622,7 @@ er<!DOCTYPE html>
         let filteredAnimals = [];
         let currentRanking = 'overall';
         let animals = [];
+        let userVotes = new Set();
 
         // Initialize the application
         function init() {
@@ -880,9 +881,16 @@ er<!DOCTYPE html>
         }
 
         function vote(animalId, direction) {
+            // Prevent multiple votes for same animal
+            if (userVotes.has(animalId)) {
+                showVoteAnimation(false, "Already voted!");
+                return;
+            }
+            
             const animal = animals.find(a => a.id === animalId);
             if (animal) {
-                animal.votes += direction * Math.floor(Math.random() * 10 + 1);
+                animal.votes += direction;
+                userVotes.add(animalId); // Track that user voted for this animal
                 updateStats();
                 renderAnimals();
                 renderLeaderboard();
