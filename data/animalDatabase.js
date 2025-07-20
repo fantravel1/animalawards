@@ -6561,6 +6561,204 @@ const animalDatabase = [
             "Winter backyard brightener"
         ],
         conservation: "Stable"
+    },
+    {
+        id: 301,
+        name: "Coral Polyp",
+        emoji: "🪸",
+        category: "Cnidarians",
+        habitat: "Ocean",
+        votes: 4890,
+        intelligence: 35,
+        adaptability: 75,
+        cuteness: 85,
+        survival: 80,
+        social: 100,
+        size: 100,
+        usefulness: 100,
+        facts: [
+            "Reef ecosystem architect",
+            "Symbiotic algae partnership",
+            "Calcium carbonate builder",
+            "Ocean biodiversity foundation"
+        ],
+        conservation: "Critically Threatened"
+    },
+    {
+        id: 302,
+        name: "Moth",
+        emoji: "🦋",
+        category: "Insects",
+        habitat: "Various",
+        votes: 2890,
+        intelligence: 65,
+        adaptability: 90,
+        cuteness: 85,
+        survival: 85,
+        social: 60,
+        size: 90,
+        usefulness: 85,
+        facts: [
+            "Night butterfly relative",
+            "Pollinator of night flowers",
+            "Light navigation specialist",
+            "Feathery antenna sensors"
+        ],
+        conservation: "Declining"
+    },
+    {
+        id: 303,
+        name: "Fly",
+        emoji: "🪰",
+        category: "Insects",
+        habitat: "Various",
+        votes: 1234,
+        intelligence: 55,
+        adaptability: 100,
+        cuteness: 30,
+        survival: 95,
+        social: 70,
+        size: 95,
+        usefulness: 90,
+        facts: [
+            "Decomposer specialist",
+            "Disease vector potential",
+            "Rapid reproduction cycle",
+            "Ecosystem cleanup crew"
+        ],
+        conservation: "Abundant"
+    },
+    {
+        id: 304,
+        name: "Aphid",
+        emoji: "🐛",
+        category: "Insects",
+        habitat: "Various",
+        votes: 890,
+        intelligence: 40,
+        adaptability: 95,
+        cuteness: 50,
+        survival: 85,
+        social: 90,
+        size: 100,
+        usefulness: 40,
+        facts: [
+            "Plant sap parasite",
+            "Rapid clonal reproduction",
+            "Ant farming symbiosis",
+            "Agricultural pest challenge"
+        ],
+        conservation: "Abundant"
+    },
+    {
+        id: 305,
+        name: "Caterpillar",
+        emoji: "🐛",
+        category: "Insects",
+        habitat: "Various",
+        votes: 3567,
+        intelligence: 45,
+        adaptability: 80,
+        cuteness: 90,
+        survival: 70,
+        social: 60,
+        size: 85,
+        usefulness: 70,
+        facts: [
+            "Transformation stage master",
+            "Leaf-eating machine",
+            "Complete metamorphosis",
+            "Future butterfly/moth"
+        ],
+        conservation: "Stable"
+    },
+    {
+        id: 306,
+        name: "Cicada",
+        emoji: "🦗",
+        category: "Insects",
+        habitat: "Forest",
+        votes: 2456,
+        intelligence: 60,
+        adaptability: 85,
+        cuteness: 70,
+        survival: 90,
+        social: 85,
+        size: 80,
+        usefulness: 75,
+        facts: [
+            "Periodic emergence phenomenon",
+            "Underground larval stage",
+            "Deafening mating chorus",
+            "Prime number life cycles"
+        ],
+        conservation: "Stable"
+    },
+    {
+        id: 307,
+        name: "Stick Insect",
+        emoji: "🦗",
+        category: "Insects",
+        habitat: "Forest",
+        votes: 2789,
+        intelligence: 50,
+        adaptability: 85,
+        cuteness: 80,
+        survival: 95,
+        social: 30,
+        size: 85,
+        usefulness: 65,
+        facts: [
+            "Camouflage master supreme",
+            "Twig mimicry perfection",
+            "Swaying movement defense",
+            "Predator evasion expert"
+        ],
+        conservation: "Stable"
+    },
+    {
+        id: 308,
+        name: "Cockroach",
+        emoji: "🪳",
+        category: "Insects",
+        habitat: "Various",
+        votes: 1567,
+        intelligence: 70,
+        adaptability: 100,
+        cuteness: 25,
+        survival: 100,
+        social: 60,
+        size: 90,
+        usefulness: 80,
+        facts: [
+            "Ultimate survivor species",
+            "Nuclear radiation resistant",
+            "Ancient lineage champion",
+            "Decomposer and recycler"
+        ],
+        conservation: "Abundant"
+    },
+    {
+        id: 309,
+        name: "Flea",
+        emoji: "🪲",
+        category: "Insects",
+        habitat: "Various",
+        votes: 678,
+        intelligence: 45,
+        adaptability: 95,
+        cuteness: 20,
+        survival: 90,
+        social: 50,
+        size: 100,
+        usefulness: 30,
+        facts: [
+            "Jumping parasite champion",
+            "Blood-sucking specialist",
+            "Incredible leap proportion",
+            "Disease transmission vector"
+        ],
+        conservation: "Abundant"
     }
 ];
 
