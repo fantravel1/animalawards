@@ -738,6 +738,10 @@
                     <div id="missionsContainer"></div>
                 </div>
 
+                <div id="dailyChallengeContainer" class="panel">
+                    <!-- Daily challenge rendered here -->
+                </div>
+
                 <div class="panel">
                     <div class="panel-title">📖 Story Progress</div>
                     <div style="font-size: 0.9rem; opacity: 0.8;">
@@ -751,6 +755,10 @@
                     <button class="btn-secondary" onclick="showStory()" style="width: 100%; margin-top: 15px;">
                         Continue Story
                     </button>
+                </div>
+
+                <div id="eventContainer" class="panel" style="display: none;">
+                    <!-- Active events rendered here -->
                 </div>
             </div>
 
@@ -797,26 +805,41 @@
                     <!-- Mini-Games Tab -->
                     <div id="gamesTab" class="tab-content">
                         <h2 style="margin-bottom: 20px;">🎮 Mini-Games & Challenges</h2>
+                        <p style="opacity: 0.9; margin-bottom: 30px; text-align: center;">
+                            Play educational games to earn XP, credits, and learn about animals!
+                        </p>
                         <div class="minigame-grid">
                             <div class="minigame-card" onclick="startTrivia()">
                                 <div class="minigame-icon">🧠</div>
                                 <div class="minigame-title">Animal Trivia</div>
                                 <div class="minigame-description">Test your knowledge and earn rewards!</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +15 XP per correct answer
+                                </div>
                             </div>
                             <div class="minigame-card" onclick="startHabitatMatch()">
                                 <div class="minigame-icon">🌍</div>
                                 <div class="minigame-title">Habitat Match</div>
                                 <div class="minigame-description">Match animals to their natural habitats</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +100 XP for perfect score
+                                </div>
                             </div>
                             <div class="minigame-card" onclick="startEcosystemBuilder()">
                                 <div class="minigame-icon">🌳</div>
                                 <div class="minigame-title">Ecosystem Builder</div>
-                                <div class="minigame-description">Create balanced ecosystems</div>
+                                <div class="minigame-description">Create balanced ecosystems for Mars</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +150 XP for perfect balance
+                                </div>
                             </div>
                             <div class="minigame-card" onclick="startConservationChallenge()">
                                 <div class="minigame-icon">🦁</div>
-                                <div class="minigame-title">Conservation Quest</div>
-                                <div class="minigame-description">Learn about endangered species</div>
+                                <div class="minigame-title">Conservation Challenge</div>
+                                <div class="minigame-description">Make critical conservation decisions!</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +120 XP for optimal choices
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -828,6 +851,13 @@
                 <div class="panel">
                     <div class="panel-title">🏆 Achievements</div>
                     <div class="achievement-grid" id="achievementsGrid"></div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-title">⚔️ Boss Challenges</div>
+                    <div id="bossContainer">
+                        <!-- Boss challenges rendered here -->
+                    </div>
                 </div>
 
                 <div class="panel">
@@ -846,10 +876,20 @@
                             <strong id="gamesPlayed">0</strong>
                         </div>
                         <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Bosses Defeated:</span>
+                            <strong id="bossesDefeated">0</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
                             <span>Play Time:</span>
                             <strong id="playTime">0m</strong>
                         </div>
                     </div>
+                    <button class="btn-secondary" onclick="showLeaderboard()" style="width: 100%; margin-top: 15px;">
+                        🏆 View Leaderboard
+                    </button>
+                    <button class="btn-secondary" onclick="showSettings()" style="width: 100%; margin-top: 10px;">
+                        ⚙️ Settings
+                    </button>
                 </div>
             </div>
         </div>
@@ -879,5 +919,9 @@
 
     <script src="data/animalDatabase.js"></script>
     <script src="game.js"></script>
+    <script src="minigames.js"></script>
+    <script src="advanced-features.js"></script>
+    <script src="game-enhanced.js"></script>
+    <script src="game-integration.js"></script>
 </body>
 </html>
