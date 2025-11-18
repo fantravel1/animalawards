@@ -776,6 +776,7 @@
                     <div class="tab-navigation">
                         <button class="tab-btn active" onclick="switchTab('discover')">🔍 Discover</button>
                         <button class="tab-btn" onclick="switchTab('ark')">🚀 Build Ark</button>
+                        <button class="tab-btn" onclick="switchTab('upgrades')">⬆️ Upgrades</button>
                         <button class="tab-btn" onclick="switchTab('learn')">📚 Learn</button>
                         <button class="tab-btn" onclick="switchTab('games')">🎮 Mini-Games</button>
                     </div>
@@ -802,6 +803,29 @@
                             </div>
                         </div>
                         <div class="ark-slots" id="arkSlots"></div>
+                    </div>
+
+                    <!-- Upgrades Tab -->
+                    <div id="upgradesTab" class="tab-content">
+                        <h2 style="margin-bottom: 20px;">⬆️ Progression</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <div class="minigame-card" onclick="showArkUpgrades()" style="cursor: pointer;">
+                                <div class="minigame-icon">🚀</div>
+                                <div class="minigame-title">Ark Upgrades</div>
+                                <div class="minigame-description">Permanent improvements to your ark</div>
+                                <div style="text-align: center; margin-top: 10px; color: #FFD93D;">
+                                    Spend credits for bonuses!
+                                </div>
+                            </div>
+                            <div class="minigame-card" onclick="showPrestigeModal()" style="cursor: pointer;">
+                                <div class="minigame-icon">👑</div>
+                                <div class="minigame-title">Prestige System</div>
+                                <div class="minigame-description">Reset for permanent bonuses</div>
+                                <div style="text-align: center; margin-top: 10px; color: #FFD93D;">
+                                    Level 30+ required
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Learn Tab -->
@@ -847,6 +871,30 @@
                                 <div class="minigame-description">Make critical conservation decisions!</div>
                                 <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
                                     +120 XP for optimal choices
+                                </div>
+                            </div>
+                            <div class="minigame-card" onclick="startMemoryMatch()">
+                                <div class="minigame-icon">🎴</div>
+                                <div class="minigame-title">Memory Match</div>
+                                <div class="minigame-description">Match pairs of animals!</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +50-150 XP based on performance
+                                </div>
+                            </div>
+                            <div class="minigame-card" onclick="startAnimalSoundsQuiz()">
+                                <div class="minigame-icon">🔊</div>
+                                <div class="minigame-title">Animal Sounds Quiz</div>
+                                <div class="minigame-description">Identify animals by their sounds!</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +80 XP for passing
+                                </div>
+                            </div>
+                            <div class="minigame-card" onclick="startSizeComparison()">
+                                <div class="minigame-icon">📏</div>
+                                <div class="minigame-title">Size Comparison</div>
+                                <div class="minigame-description">Guess which animal is larger!</div>
+                                <div style="text-align: center; margin-top: 10px; color: #4ECDC4;">
+                                    +50-125 XP based on accuracy
                                 </div>
                             </div>
                         </div>
@@ -932,5 +980,8 @@
     <script src="game-enhanced.js"></script>
     <script src="game-integration.js"></script>
     <script src="gameplay-enhancements.js"></script>
+    <script src="visual-effects.js"></script>
+    <script src="new-minigames.js"></script>
+    <script src="prestige-system.js"></script>
 </body>
 </html>
