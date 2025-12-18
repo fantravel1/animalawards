@@ -1,0 +1,1432 @@
+[
+  {
+    "name": "African Elephant",
+    "slug": "african-elephant",
+    "url": "/animals/african-elephant.html"
+  },
+  {
+    "name": "Honey Bee",
+    "slug": "honey-bee",
+    "url": "/animals/honey-bee.html"
+  },
+  {
+    "name": "Arctic Fox",
+    "slug": "arctic-fox",
+    "url": "/animals/arctic-fox.html"
+  },
+  {
+    "name": "Octopus",
+    "slug": "octopus",
+    "url": "/animals/octopus.html"
+  },
+  {
+    "name": "Emperor Penguin",
+    "slug": "emperor-penguin",
+    "url": "/animals/emperor-penguin.html"
+  },
+  {
+    "name": "Red Panda",
+    "slug": "red-panda",
+    "url": "/animals/red-panda.html"
+  },
+  {
+    "name": "Dolphin",
+    "slug": "dolphin",
+    "url": "/animals/dolphin.html"
+  },
+  {
+    "name": "Snow Leopard",
+    "slug": "snow-leopard",
+    "url": "/animals/snow-leopard.html"
+  },
+  {
+    "name": "Parrot",
+    "slug": "parrot",
+    "url": "/animals/parrot.html"
+  },
+  {
+    "name": "Sea Turtle",
+    "slug": "sea-turtle",
+    "url": "/animals/sea-turtle.html"
+  },
+  {
+    "name": "Wolf",
+    "slug": "wolf",
+    "url": "/animals/wolf.html"
+  },
+  {
+    "name": "Hummingbird",
+    "slug": "hummingbird",
+    "url": "/animals/hummingbird.html"
+  },
+  {
+    "name": "Chimpanzee",
+    "slug": "chimpanzee",
+    "url": "/animals/chimpanzee.html"
+  },
+  {
+    "name": "Polar Bear",
+    "slug": "polar-bear",
+    "url": "/animals/polar-bear.html"
+  },
+  {
+    "name": "Chameleon",
+    "slug": "chameleon",
+    "url": "/animals/chameleon.html"
+  },
+  {
+    "name": "Owl",
+    "slug": "owl",
+    "url": "/animals/owl.html"
+  },
+  {
+    "name": "Koala",
+    "slug": "koala",
+    "url": "/animals/koala.html"
+  },
+  {
+    "name": "Shark",
+    "slug": "shark",
+    "url": "/animals/shark.html"
+  },
+  {
+    "name": "Butterfly",
+    "slug": "butterfly",
+    "url": "/animals/butterfly.html"
+  },
+  {
+    "name": "Giraffe",
+    "slug": "giraffe",
+    "url": "/animals/giraffe.html"
+  },
+  {
+    "name": "Golden Retriever",
+    "slug": "golden-retriever",
+    "url": "/animals/golden-retriever.html"
+  },
+  {
+    "name": "Mantis Shrimp",
+    "slug": "mantis-shrimp",
+    "url": "/animals/mantis-shrimp.html"
+  },
+  {
+    "name": "Ring-tailed Lemur",
+    "slug": "ring-tailed-lemur",
+    "url": "/animals/ring-tailed-lemur.html"
+  },
+  {
+    "name": "Axolotl",
+    "slug": "axolotl",
+    "url": "/animals/axolotl.html"
+  },
+  {
+    "name": "Barn Owl",
+    "slug": "barn-owl",
+    "url": "/animals/barn-owl.html"
+  },
+  {
+    "name": "Capybara",
+    "slug": "capybara",
+    "url": "/animals/capybara.html"
+  },
+  {
+    "name": "Praying Mantis",
+    "slug": "praying-mantis",
+    "url": "/animals/praying-mantis.html"
+  },
+  {
+    "name": "Fennec Fox",
+    "slug": "fennec-fox",
+    "url": "/animals/fennec-fox.html"
+  },
+  {
+    "name": "Beluga Whale",
+    "slug": "beluga-whale",
+    "url": "/animals/beluga-whale.html"
+  },
+  {
+    "name": "Pangolin",
+    "slug": "pangolin",
+    "url": "/animals/pangolin.html"
+  },
+  {
+    "name": "Quetzal",
+    "slug": "quetzal",
+    "url": "/animals/quetzal.html"
+  },
+  {
+    "name": "Tardigrade",
+    "slug": "tardigrade",
+    "url": "/animals/tardigrade.html"
+  },
+  {
+    "name": "Sloth",
+    "slug": "sloth",
+    "url": "/animals/sloth.html"
+  },
+  {
+    "name": "Orca",
+    "slug": "orca",
+    "url": "/animals/orca.html"
+  },
+  {
+    "name": "Meerkat",
+    "slug": "meerkat",
+    "url": "/animals/meerkat.html"
+  },
+  {
+    "name": "Platypus",
+    "slug": "platypus",
+    "url": "/animals/platypus.html"
+  },
+  {
+    "name": "Secretary Bird",
+    "slug": "secretary-bird",
+    "url": "/animals/secretary-bird.html"
+  },
+  {
+    "name": "Glass Frog",
+    "slug": "glass-frog",
+    "url": "/animals/glass-frog.html"
+  },
+  {
+    "name": "Binturong",
+    "slug": "binturong",
+    "url": "/animals/binturong.html"
+  },
+  {
+    "name": "Arctic Tern",
+    "slug": "arctic-tern",
+    "url": "/animals/arctic-tern.html"
+  },
+  {
+    "name": "Snow Monkey",
+    "slug": "snow-monkey",
+    "url": "/animals/snow-monkey.html"
+  },
+  {
+    "name": "Peacock Mantis Shrimp",
+    "slug": "peacock-mantis-shrimp",
+    "url": "/animals/peacock-mantis-shrimp.html"
+  },
+  {
+    "name": "Quokka",
+    "slug": "quokka",
+    "url": "/animals/quokka.html"
+  },
+  {
+    "name": "Leafy Sea Dragon",
+    "slug": "leafy-sea-dragon",
+    "url": "/animals/leafy-sea-dragon.html"
+  },
+  {
+    "name": "Bald Eagle",
+    "slug": "bald-eagle",
+    "url": "/animals/bald-eagle.html"
+  },
+  {
+    "name": "Sugar Glider",
+    "slug": "sugar-glider",
+    "url": "/animals/sugar-glider.html"
+  },
+  {
+    "name": "Giant Pacific Octopus",
+    "slug": "giant-pacific-octopus",
+    "url": "/animals/giant-pacific-octopus.html"
+  },
+  {
+    "name": "Mandrill",
+    "slug": "mandrill",
+    "url": "/animals/mandrill.html"
+  },
+  {
+    "name": "Puffin",
+    "slug": "puffin",
+    "url": "/animals/puffin.html"
+  },
+  {
+    "name": "Thorny Devil",
+    "slug": "thorny-devil",
+    "url": "/animals/thorny-devil.html"
+  },
+  {
+    "name": "Kiwi Bird",
+    "slug": "kiwi-bird",
+    "url": "/animals/kiwi-bird.html"
+  },
+  {
+    "name": "Monarch Butterfly",
+    "slug": "monarch-butterfly",
+    "url": "/animals/monarch-butterfly.html"
+  },
+  {
+    "name": "Gharial",
+    "slug": "gharial",
+    "url": "/animals/gharial.html"
+  },
+  {
+    "name": "Numbat",
+    "slug": "numbat",
+    "url": "/animals/numbat.html"
+  },
+  {
+    "name": "Leafcutter Ant",
+    "slug": "leafcutter-ant",
+    "url": "/animals/leafcutter-ant.html"
+  },
+  {
+    "name": "Flamingo",
+    "slug": "flamingo",
+    "url": "/animals/flamingo.html"
+  },
+  {
+    "name": "Shoebill Stork",
+    "slug": "shoebill-stork",
+    "url": "/animals/shoebill-stork.html"
+  },
+  {
+    "name": "Mountain Goat",
+    "slug": "mountain-goat",
+    "url": "/animals/mountain-goat.html"
+  },
+  {
+    "name": "Blobfish",
+    "slug": "blobfish",
+    "url": "/animals/blobfish.html"
+  },
+  {
+    "name": "Okapi",
+    "slug": "okapi",
+    "url": "/animals/okapi.html"
+  },
+  {
+    "name": "Vampire Bat",
+    "slug": "vampire-bat",
+    "url": "/animals/vampire-bat.html"
+  },
+  {
+    "name": "Kakapo",
+    "slug": "kakapo",
+    "url": "/animals/kakapo.html"
+  },
+  {
+    "name": "Pistol Shrimp",
+    "slug": "pistol-shrimp",
+    "url": "/animals/pistol-shrimp.html"
+  },
+  {
+    "name": "Ibex",
+    "slug": "ibex",
+    "url": "/animals/ibex.html"
+  },
+  {
+    "name": "Fossa",
+    "slug": "fossa",
+    "url": "/animals/fossa.html"
+  },
+  {
+    "name": "Kingfisher",
+    "slug": "kingfisher",
+    "url": "/animals/kingfisher.html"
+  },
+  {
+    "name": "Wombat",
+    "slug": "wombat",
+    "url": "/animals/wombat.html"
+  },
+  {
+    "name": "Caracal",
+    "slug": "caracal",
+    "url": "/animals/caracal.html"
+  },
+  {
+    "name": "Hornbill",
+    "slug": "hornbill",
+    "url": "/animals/hornbill.html"
+  },
+  {
+    "name": "Dugong",
+    "slug": "dugong",
+    "url": "/animals/dugong.html"
+  },
+  {
+    "name": "Cassowary",
+    "slug": "cassowary",
+    "url": "/animals/cassowary.html"
+  },
+  {
+    "name": "Aardvark",
+    "slug": "aardvark",
+    "url": "/animals/aardvark.html"
+  },
+  {
+    "name": "Proboscis Monkey",
+    "slug": "proboscis-monkey",
+    "url": "/animals/proboscis-monkey.html"
+  },
+  {
+    "name": "Nautilus",
+    "slug": "nautilus",
+    "url": "/animals/nautilus.html"
+  },
+  {
+    "name": "Tapir",
+    "slug": "tapir",
+    "url": "/animals/tapir.html"
+  },
+  {
+    "name": "Lyrebird",
+    "slug": "lyrebird",
+    "url": "/animals/lyrebird.html"
+  },
+  {
+    "name": "Aye-aye",
+    "slug": "aye-aye",
+    "url": "/animals/aye-aye.html"
+  },
+  {
+    "name": "Saiga Antelope",
+    "slug": "saiga-antelope",
+    "url": "/animals/saiga-antelope.html"
+  },
+  {
+    "name": "Bombardier Beetle",
+    "slug": "bombardier-beetle",
+    "url": "/animals/bombardier-beetle.html"
+  },
+  {
+    "name": "Anglerfish",
+    "slug": "anglerfish",
+    "url": "/animals/anglerfish.html"
+  },
+  {
+    "name": "Star-nosed Mole",
+    "slug": "star-nosed-mole",
+    "url": "/animals/star-nosed-mole.html"
+  },
+  {
+    "name": "Jerboa",
+    "slug": "jerboa",
+    "url": "/animals/jerboa.html"
+  },
+  {
+    "name": "Bongo Antelope",
+    "slug": "bongo-antelope",
+    "url": "/animals/bongo-antelope.html"
+  },
+  {
+    "name": "Naked Mole Rat",
+    "slug": "naked-mole-rat",
+    "url": "/animals/naked-mole-rat.html"
+  },
+  {
+    "name": "Sunfish",
+    "slug": "sunfish",
+    "url": "/animals/sunfish.html"
+  },
+  {
+    "name": "Tarsier",
+    "slug": "tarsier",
+    "url": "/animals/tarsier.html"
+  },
+  {
+    "name": "Gliding Squirrel",
+    "slug": "gliding-squirrel",
+    "url": "/animals/gliding-squirrel.html"
+  },
+  {
+    "name": "Geoduck Clam",
+    "slug": "geoduck-clam",
+    "url": "/animals/geoduck-clam.html"
+  },
+  {
+    "name": "Slow Loris",
+    "slug": "slow-loris",
+    "url": "/animals/slow-loris.html"
+  },
+  {
+    "name": "Goblin Shark",
+    "slug": "goblin-shark",
+    "url": "/animals/goblin-shark.html"
+  },
+  {
+    "name": "Hoatzin",
+    "slug": "hoatzin",
+    "url": "/animals/hoatzin.html"
+  },
+  {
+    "name": "Japanese Spider Crab",
+    "slug": "japanese-spider-crab",
+    "url": "/animals/japanese-spider-crab.html"
+  },
+  {
+    "name": "Mata Mata Turtle",
+    "slug": "mata-mata-turtle",
+    "url": "/animals/mata-mata-turtle.html"
+  },
+  {
+    "name": "Pink Fairy Armadillo",
+    "slug": "pink-fairy-armadillo",
+    "url": "/animals/pink-fairy-armadillo.html"
+  },
+  {
+    "name": "Vaquita",
+    "slug": "vaquita",
+    "url": "/animals/vaquita.html"
+  },
+  {
+    "name": "Thorny Dragon",
+    "slug": "thorny-dragon",
+    "url": "/animals/thorny-dragon.html"
+  },
+  {
+    "name": "Bactrian Camel",
+    "slug": "bactrian-camel",
+    "url": "/animals/bactrian-camel.html"
+  },
+  {
+    "name": "Wolverine",
+    "slug": "wolverine",
+    "url": "/animals/wolverine.html"
+  },
+  {
+    "name": "Leafcutter Ant Queen",
+    "slug": "leafcutter-ant-queen",
+    "url": "/animals/leafcutter-ant-queen.html"
+  },
+  {
+    "name": "Pangolin (Indian)",
+    "slug": "pangolin-indian",
+    "url": "/animals/pangolin-indian.html"
+  },
+  {
+    "name": "Frilled Lizard",
+    "slug": "frilled-lizard",
+    "url": "/animals/frilled-lizard.html"
+  },
+  {
+    "name": "Kakapo (Night Parrot)",
+    "slug": "kakapo-night-parrot",
+    "url": "/animals/kakapo-night-parrot.html"
+  },
+  {
+    "name": "Vampire Squid",
+    "slug": "vampire-squid",
+    "url": "/animals/vampire-squid.html"
+  },
+  {
+    "name": "Sand Cat",
+    "slug": "sand-cat",
+    "url": "/animals/sand-cat.html"
+  },
+  {
+    "name": "Japanese Macaque",
+    "slug": "japanese-macaque",
+    "url": "/animals/japanese-macaque.html"
+  },
+  {
+    "name": "Electric Eel",
+    "slug": "electric-eel",
+    "url": "/animals/electric-eel.html"
+  },
+  {
+    "name": "Binturong (Bearcat)",
+    "slug": "binturong-bearcat",
+    "url": "/animals/binturong-bearcat.html"
+  },
+  {
+    "name": "Mantis Shrimp (Peacock)",
+    "slug": "mantis-shrimp-peacock",
+    "url": "/animals/mantis-shrimp-peacock.html"
+  },
+  {
+    "name": "Quoll",
+    "slug": "quoll",
+    "url": "/animals/quoll.html"
+  },
+  {
+    "name": "Horseshoe Crab",
+    "slug": "horseshoe-crab",
+    "url": "/animals/horseshoe-crab.html"
+  },
+  {
+    "name": "Pangolin (Giant)",
+    "slug": "pangolin-giant",
+    "url": "/animals/pangolin-giant.html"
+  },
+  {
+    "name": "Spiny Anteater (Echidna)",
+    "slug": "spiny-anteater-echidna",
+    "url": "/animals/spiny-anteater-echidna.html"
+  },
+  {
+    "name": "Gharial Crocodile",
+    "slug": "gharial-crocodile",
+    "url": "/animals/gharial-crocodile.html"
+  },
+  {
+    "name": "Tree Kangaroo",
+    "slug": "tree-kangaroo",
+    "url": "/animals/tree-kangaroo.html"
+  },
+  {
+    "name": "Pangolin (Chinese)",
+    "slug": "pangolin-chinese",
+    "url": "/animals/pangolin-chinese.html"
+  },
+  {
+    "name": "Blobfish (Deep Sea)",
+    "slug": "blobfish-deep-sea",
+    "url": "/animals/blobfish-deep-sea.html"
+  },
+  {
+    "name": "Pangolin (Tree)",
+    "slug": "pangolin-tree",
+    "url": "/animals/pangolin-tree.html"
+  },
+  {
+    "name": "Frilled Shark",
+    "slug": "frilled-shark",
+    "url": "/animals/frilled-shark.html"
+  },
+  {
+    "name": "Pink River Dolphin",
+    "slug": "pink-river-dolphin",
+    "url": "/animals/pink-river-dolphin.html"
+  },
+  {
+    "name": "Aye-aye Lemur",
+    "slug": "aye-aye-lemur",
+    "url": "/animals/aye-aye-lemur.html"
+  },
+  {
+    "name": "Saola",
+    "slug": "saola",
+    "url": "/animals/saola.html"
+  },
+  {
+    "name": "Blobfish Sculpin",
+    "slug": "blobfish-sculpin",
+    "url": "/animals/blobfish-sculpin.html"
+  },
+  {
+    "name": "Pangolin (Long-tailed)",
+    "slug": "pangolin-long-tailed",
+    "url": "/animals/pangolin-long-tailed.html"
+  },
+  {
+    "name": "Japanese Giant Salamander",
+    "slug": "japanese-giant-salamander",
+    "url": "/animals/japanese-giant-salamander.html"
+  },
+  {
+    "name": "Gharial (Male)",
+    "slug": "gharial-male",
+    "url": "/animals/gharial-male.html"
+  },
+  {
+    "name": "Markhor",
+    "slug": "markhor",
+    "url": "/animals/markhor.html"
+  },
+  {
+    "name": "Kagu",
+    "slug": "kagu",
+    "url": "/animals/kagu.html"
+  },
+  {
+    "name": "Olm",
+    "slug": "olm",
+    "url": "/animals/olm.html"
+  },
+  {
+    "name": "Aardwolf",
+    "slug": "aardwolf",
+    "url": "/animals/aardwolf.html"
+  },
+  {
+    "name": "Pangolin (Temminck's)",
+    "slug": "pangolin-temminck-s",
+    "url": "/animals/pangolin-temminck-s.html"
+  },
+  {
+    "name": "Sungazer Lizard",
+    "slug": "sungazer-lizard",
+    "url": "/animals/sungazer-lizard.html"
+  },
+  {
+    "name": "Fishing Cat",
+    "slug": "fishing-cat",
+    "url": "/animals/fishing-cat.html"
+  },
+  {
+    "name": "Kakapo Parrot",
+    "slug": "kakapo-parrot",
+    "url": "/animals/kakapo-parrot.html"
+  },
+  {
+    "name": "Blobfish (Fathead)",
+    "slug": "blobfish-fathead",
+    "url": "/animals/blobfish-fathead.html"
+  },
+  {
+    "name": "Indri Lemur",
+    "slug": "indri-lemur",
+    "url": "/animals/indri-lemur.html"
+  },
+  {
+    "name": "Pangolin (White-bellied)",
+    "slug": "pangolin-white-bellied",
+    "url": "/animals/pangolin-white-bellied.html"
+  },
+  {
+    "name": "Sunda Colugo",
+    "slug": "sunda-colugo",
+    "url": "/animals/sunda-colugo.html"
+  },
+  {
+    "name": "Gharial (Female)",
+    "slug": "gharial-female",
+    "url": "/animals/gharial-female.html"
+  },
+  {
+    "name": "Numbat Anteater",
+    "slug": "numbat-anteater",
+    "url": "/animals/numbat-anteater.html"
+  },
+  {
+    "name": "Aye-aye (Madagascar)",
+    "slug": "aye-aye-madagascar",
+    "url": "/animals/aye-aye-madagascar.html"
+  },
+  {
+    "name": "Mata Mata",
+    "slug": "mata-mata",
+    "url": "/animals/mata-mata.html"
+  },
+  {
+    "name": "Pangolin (Sunda)",
+    "slug": "pangolin-sunda",
+    "url": "/animals/pangolin-sunda.html"
+  },
+  {
+    "name": "Blobfish (Pacific)",
+    "slug": "blobfish-pacific",
+    "url": "/animals/blobfish-pacific.html"
+  },
+  {
+    "name": "Quoll (Spotted-tail)",
+    "slug": "quoll-spotted-tail",
+    "url": "/animals/quoll-spotted-tail.html"
+  },
+  {
+    "name": "Gharial (Juvenile)",
+    "slug": "gharial-juvenile",
+    "url": "/animals/gharial-juvenile.html"
+  },
+  {
+    "name": "Chinese Water Deer",
+    "slug": "chinese-water-deer",
+    "url": "/animals/chinese-water-deer.html"
+  },
+  {
+    "name": "Pangolin (Philippine)",
+    "slug": "pangolin-philippine",
+    "url": "/animals/pangolin-philippine.html"
+  },
+  {
+    "name": "Domestic Cat",
+    "slug": "domestic-cat",
+    "url": "/animals/domestic-cat.html"
+  },
+  {
+    "name": "Horse",
+    "slug": "horse",
+    "url": "/animals/horse.html"
+  },
+  {
+    "name": "Cow",
+    "slug": "cow",
+    "url": "/animals/cow.html"
+  },
+  {
+    "name": "Pig",
+    "slug": "pig",
+    "url": "/animals/pig.html"
+  },
+  {
+    "name": "Chicken",
+    "slug": "chicken",
+    "url": "/animals/chicken.html"
+  },
+  {
+    "name": "Rabbit",
+    "slug": "rabbit",
+    "url": "/animals/rabbit.html"
+  },
+  {
+    "name": "Goat",
+    "slug": "goat",
+    "url": "/animals/goat.html"
+  },
+  {
+    "name": "Sheep",
+    "slug": "sheep",
+    "url": "/animals/sheep.html"
+  },
+  {
+    "name": "Duck",
+    "slug": "duck",
+    "url": "/animals/duck.html"
+  },
+  {
+    "name": "Goose",
+    "slug": "goose",
+    "url": "/animals/goose.html"
+  },
+  {
+    "name": "Rat",
+    "slug": "rat",
+    "url": "/animals/rat.html"
+  },
+  {
+    "name": "Mouse",
+    "slug": "mouse",
+    "url": "/animals/mouse.html"
+  },
+  {
+    "name": "Squirrel",
+    "slug": "squirrel",
+    "url": "/animals/squirrel.html"
+  },
+  {
+    "name": "Raccoon",
+    "slug": "raccoon",
+    "url": "/animals/raccoon.html"
+  },
+  {
+    "name": "Opossum",
+    "slug": "opossum",
+    "url": "/animals/opossum.html"
+  },
+  {
+    "name": "Skunk",
+    "slug": "skunk",
+    "url": "/animals/skunk.html"
+  },
+  {
+    "name": "Badger",
+    "slug": "badger",
+    "url": "/animals/badger.html"
+  },
+  {
+    "name": "Deer",
+    "slug": "deer",
+    "url": "/animals/deer.html"
+  },
+  {
+    "name": "Fox",
+    "slug": "fox",
+    "url": "/animals/fox.html"
+  },
+  {
+    "name": "Bear (Black)",
+    "slug": "bear-black",
+    "url": "/animals/bear-black.html"
+  },
+  {
+    "name": "Crow",
+    "slug": "crow",
+    "url": "/animals/crow.html"
+  },
+  {
+    "name": "Robin",
+    "slug": "robin",
+    "url": "/animals/robin.html"
+  },
+  {
+    "name": "Sparrow",
+    "slug": "sparrow",
+    "url": "/animals/sparrow.html"
+  },
+  {
+    "name": "Pigeon",
+    "slug": "pigeon",
+    "url": "/animals/pigeon.html"
+  },
+  {
+    "name": "Frog",
+    "slug": "frog",
+    "url": "/animals/frog.html"
+  },
+  {
+    "name": "Toad",
+    "slug": "toad",
+    "url": "/animals/toad.html"
+  },
+  {
+    "name": "Snake (Garter)",
+    "slug": "snake-garter",
+    "url": "/animals/snake-garter.html"
+  },
+  {
+    "name": "Lizard (Common)",
+    "slug": "lizard-common",
+    "url": "/animals/lizard-common.html"
+  },
+  {
+    "name": "Goldfish",
+    "slug": "goldfish",
+    "url": "/animals/goldfish.html"
+  },
+  {
+    "name": "Earthworm",
+    "slug": "earthworm",
+    "url": "/animals/earthworm.html"
+  },
+  {
+    "name": "Lion",
+    "slug": "lion",
+    "url": "/animals/lion.html"
+  },
+  {
+    "name": "Tiger",
+    "slug": "tiger",
+    "url": "/animals/tiger.html"
+  },
+  {
+    "name": "Gorilla",
+    "slug": "gorilla",
+    "url": "/animals/gorilla.html"
+  },
+  {
+    "name": "Orangutan",
+    "slug": "orangutan",
+    "url": "/animals/orangutan.html"
+  },
+  {
+    "name": "Rhinoceros",
+    "slug": "rhinoceros",
+    "url": "/animals/rhinoceros.html"
+  },
+  {
+    "name": "Hippopotamus",
+    "slug": "hippopotamus",
+    "url": "/animals/hippopotamus.html"
+  },
+  {
+    "name": "Cheetah",
+    "slug": "cheetah",
+    "url": "/animals/cheetah.html"
+  },
+  {
+    "name": "Leopard",
+    "slug": "leopard",
+    "url": "/animals/leopard.html"
+  },
+  {
+    "name": "Jaguar",
+    "slug": "jaguar",
+    "url": "/animals/jaguar.html"
+  },
+  {
+    "name": "Zebra",
+    "slug": "zebra",
+    "url": "/animals/zebra.html"
+  },
+  {
+    "name": "Bison",
+    "slug": "bison",
+    "url": "/animals/bison.html"
+  },
+  {
+    "name": "Moose",
+    "slug": "moose",
+    "url": "/animals/moose.html"
+  },
+  {
+    "name": "Elk",
+    "slug": "elk",
+    "url": "/animals/elk.html"
+  },
+  {
+    "name": "Grizzly Bear",
+    "slug": "grizzly-bear",
+    "url": "/animals/grizzly-bear.html"
+  },
+  {
+    "name": "Giant Panda",
+    "slug": "giant-panda",
+    "url": "/animals/giant-panda.html"
+  },
+  {
+    "name": "Kangaroo",
+    "slug": "kangaroo",
+    "url": "/animals/kangaroo.html"
+  },
+  {
+    "name": "Tasmanian Devil",
+    "slug": "tasmanian-devil",
+    "url": "/animals/tasmanian-devil.html"
+  },
+  {
+    "name": "Beaver",
+    "slug": "beaver",
+    "url": "/animals/beaver.html"
+  },
+  {
+    "name": "Porcupine",
+    "slug": "porcupine",
+    "url": "/animals/porcupine.html"
+  },
+  {
+    "name": "Hedgehog",
+    "slug": "hedgehog",
+    "url": "/animals/hedgehog.html"
+  },
+  {
+    "name": "Lynx",
+    "slug": "lynx",
+    "url": "/animals/lynx.html"
+  },
+  {
+    "name": "Bobcat",
+    "slug": "bobcat",
+    "url": "/animals/bobcat.html"
+  },
+  {
+    "name": "Coyote",
+    "slug": "coyote",
+    "url": "/animals/coyote.html"
+  },
+  {
+    "name": "Hyena",
+    "slug": "hyena",
+    "url": "/animals/hyena.html"
+  },
+  {
+    "name": "Seal",
+    "slug": "seal",
+    "url": "/animals/seal.html"
+  },
+  {
+    "name": "Sea Lion",
+    "slug": "sea-lion",
+    "url": "/animals/sea-lion.html"
+  },
+  {
+    "name": "Walrus",
+    "slug": "walrus",
+    "url": "/animals/walrus.html"
+  },
+  {
+    "name": "Manatee",
+    "slug": "manatee",
+    "url": "/animals/manatee.html"
+  },
+  {
+    "name": "Humpback Whale",
+    "slug": "humpback-whale",
+    "url": "/animals/humpback-whale.html"
+  },
+  {
+    "name": "Blue Whale",
+    "slug": "blue-whale",
+    "url": "/animals/blue-whale.html"
+  },
+  {
+    "name": "Sperm Whale",
+    "slug": "sperm-whale",
+    "url": "/animals/sperm-whale.html"
+  },
+  {
+    "name": "Narwhal",
+    "slug": "narwhal",
+    "url": "/animals/narwhal.html"
+  },
+  {
+    "name": "Llama",
+    "slug": "llama",
+    "url": "/animals/llama.html"
+  },
+  {
+    "name": "Alpaca",
+    "slug": "alpaca",
+    "url": "/animals/alpaca.html"
+  },
+  {
+    "name": "Donkey",
+    "slug": "donkey",
+    "url": "/animals/donkey.html"
+  },
+  {
+    "name": "Water Buffalo",
+    "slug": "water-buffalo",
+    "url": "/animals/water-buffalo.html"
+  },
+  {
+    "name": "Yak",
+    "slug": "yak",
+    "url": "/animals/yak.html"
+  },
+  {
+    "name": "Wild Boar",
+    "slug": "wild-boar",
+    "url": "/animals/wild-boar.html"
+  },
+  {
+    "name": "Warthog",
+    "slug": "warthog",
+    "url": "/animals/warthog.html"
+  },
+  {
+    "name": "Baboon",
+    "slug": "baboon",
+    "url": "/animals/baboon.html"
+  },
+  {
+    "name": "Bonobo",
+    "slug": "bonobo",
+    "url": "/animals/bonobo.html"
+  },
+  {
+    "name": "Howler Monkey",
+    "slug": "howler-monkey",
+    "url": "/animals/howler-monkey.html"
+  },
+  {
+    "name": "Gibbon",
+    "slug": "gibbon",
+    "url": "/animals/gibbon.html"
+  },
+  {
+    "name": "Capuchin Monkey",
+    "slug": "capuchin-monkey",
+    "url": "/animals/capuchin-monkey.html"
+  },
+  {
+    "name": "Marmoset",
+    "slug": "marmoset",
+    "url": "/animals/marmoset.html"
+  },
+  {
+    "name": "Lemur",
+    "slug": "lemur",
+    "url": "/animals/lemur.html"
+  },
+  {
+    "name": "Ocelot",
+    "slug": "ocelot",
+    "url": "/animals/ocelot.html"
+  },
+  {
+    "name": "Serval",
+    "slug": "serval",
+    "url": "/animals/serval.html"
+  },
+  {
+    "name": "Puma",
+    "slug": "puma",
+    "url": "/animals/puma.html"
+  },
+  {
+    "name": "Chinchilla",
+    "slug": "chinchilla",
+    "url": "/animals/chinchilla.html"
+  },
+  {
+    "name": "Black Widow Spider",
+    "slug": "black-widow-spider",
+    "url": "/animals/black-widow-spider.html"
+  },
+  {
+    "name": "Jumping Spider",
+    "slug": "jumping-spider",
+    "url": "/animals/jumping-spider.html"
+  },
+  {
+    "name": "Orb Weaver Spider",
+    "slug": "orb-weaver-spider",
+    "url": "/animals/orb-weaver-spider.html"
+  },
+  {
+    "name": "Tarantula",
+    "slug": "tarantula",
+    "url": "/animals/tarantula.html"
+  },
+  {
+    "name": "Wolf Spider",
+    "slug": "wolf-spider",
+    "url": "/animals/wolf-spider.html"
+  },
+  {
+    "name": "Scorpion",
+    "slug": "scorpion",
+    "url": "/animals/scorpion.html"
+  },
+  {
+    "name": "Beetle",
+    "slug": "beetle",
+    "url": "/animals/beetle.html"
+  },
+  {
+    "name": "Dragonfly",
+    "slug": "dragonfly",
+    "url": "/animals/dragonfly.html"
+  },
+  {
+    "name": "Grasshopper",
+    "slug": "grasshopper",
+    "url": "/animals/grasshopper.html"
+  },
+  {
+    "name": "Cricket",
+    "slug": "cricket",
+    "url": "/animals/cricket.html"
+  },
+  {
+    "name": "Termite",
+    "slug": "termite",
+    "url": "/animals/termite.html"
+  },
+  {
+    "name": "Firefly",
+    "slug": "firefly",
+    "url": "/animals/firefly.html"
+  },
+  {
+    "name": "Ladybug",
+    "slug": "ladybug",
+    "url": "/animals/ladybug.html"
+  },
+  {
+    "name": "Dung Beetle",
+    "slug": "dung-beetle",
+    "url": "/animals/dung-beetle.html"
+  },
+  {
+    "name": "Wasp",
+    "slug": "wasp",
+    "url": "/animals/wasp.html"
+  },
+  {
+    "name": "Mosquito",
+    "slug": "mosquito",
+    "url": "/animals/mosquito.html"
+  },
+  {
+    "name": "Marine Worm",
+    "slug": "marine-worm",
+    "url": "/animals/marine-worm.html"
+  },
+  {
+    "name": "Leech",
+    "slug": "leech",
+    "url": "/animals/leech.html"
+  },
+  {
+    "name": "Flatworm",
+    "slug": "flatworm",
+    "url": "/animals/flatworm.html"
+  },
+  {
+    "name": "Roundworm",
+    "slug": "roundworm",
+    "url": "/animals/roundworm.html"
+  },
+  {
+    "name": "Salmon",
+    "slug": "salmon",
+    "url": "/animals/salmon.html"
+  },
+  {
+    "name": "Tuna",
+    "slug": "tuna",
+    "url": "/animals/tuna.html"
+  },
+  {
+    "name": "Trout",
+    "slug": "trout",
+    "url": "/animals/trout.html"
+  },
+  {
+    "name": "Bass",
+    "slug": "bass",
+    "url": "/animals/bass.html"
+  },
+  {
+    "name": "Cod",
+    "slug": "cod",
+    "url": "/animals/cod.html"
+  },
+  {
+    "name": "Catfish",
+    "slug": "catfish",
+    "url": "/animals/catfish.html"
+  },
+  {
+    "name": "Pike",
+    "slug": "pike",
+    "url": "/animals/pike.html"
+  },
+  {
+    "name": "Carp",
+    "slug": "carp",
+    "url": "/animals/carp.html"
+  },
+  {
+    "name": "Mackerel",
+    "slug": "mackerel",
+    "url": "/animals/mackerel.html"
+  },
+  {
+    "name": "Sardine",
+    "slug": "sardine",
+    "url": "/animals/sardine.html"
+  },
+  {
+    "name": "Seahorse",
+    "slug": "seahorse",
+    "url": "/animals/seahorse.html"
+  },
+  {
+    "name": "Stingray",
+    "slug": "stingray",
+    "url": "/animals/stingray.html"
+  },
+  {
+    "name": "Marlin",
+    "slug": "marlin",
+    "url": "/animals/marlin.html"
+  },
+  {
+    "name": "Barracuda",
+    "slug": "barracuda",
+    "url": "/animals/barracuda.html"
+  },
+  {
+    "name": "Moray Eel",
+    "slug": "moray-eel",
+    "url": "/animals/moray-eel.html"
+  },
+  {
+    "name": "Ostrich",
+    "slug": "ostrich",
+    "url": "/animals/ostrich.html"
+  },
+  {
+    "name": "Emu",
+    "slug": "emu",
+    "url": "/animals/emu.html"
+  },
+  {
+    "name": "Pelican",
+    "slug": "pelican",
+    "url": "/animals/pelican.html"
+  },
+  {
+    "name": "Heron",
+    "slug": "heron",
+    "url": "/animals/heron.html"
+  },
+  {
+    "name": "Swan",
+    "slug": "swan",
+    "url": "/animals/swan.html"
+  },
+  {
+    "name": "Crane",
+    "slug": "crane",
+    "url": "/animals/crane.html"
+  },
+  {
+    "name": "Turkey",
+    "slug": "turkey",
+    "url": "/animals/turkey.html"
+  },
+  {
+    "name": "Vulture",
+    "slug": "vulture",
+    "url": "/animals/vulture.html"
+  },
+  {
+    "name": "Hawk",
+    "slug": "hawk",
+    "url": "/animals/hawk.html"
+  },
+  {
+    "name": "Falcon",
+    "slug": "falcon",
+    "url": "/animals/falcon.html"
+  },
+  {
+    "name": "Peacock",
+    "slug": "peacock",
+    "url": "/animals/peacock.html"
+  },
+  {
+    "name": "Pheasant",
+    "slug": "pheasant",
+    "url": "/animals/pheasant.html"
+  },
+  {
+    "name": "Toucan",
+    "slug": "toucan",
+    "url": "/animals/toucan.html"
+  },
+  {
+    "name": "Woodpecker",
+    "slug": "woodpecker",
+    "url": "/animals/woodpecker.html"
+  },
+  {
+    "name": "Cardinal",
+    "slug": "cardinal",
+    "url": "/animals/cardinal.html"
+  },
+  {
+    "name": "Coral Polyp",
+    "slug": "coral-polyp",
+    "url": "/animals/coral-polyp.html"
+  },
+  {
+    "name": "Moth",
+    "slug": "moth",
+    "url": "/animals/moth.html"
+  },
+  {
+    "name": "Fly",
+    "slug": "fly",
+    "url": "/animals/fly.html"
+  },
+  {
+    "name": "Aphid",
+    "slug": "aphid",
+    "url": "/animals/aphid.html"
+  },
+  {
+    "name": "Caterpillar",
+    "slug": "caterpillar",
+    "url": "/animals/caterpillar.html"
+  },
+  {
+    "name": "Cicada",
+    "slug": "cicada",
+    "url": "/animals/cicada.html"
+  },
+  {
+    "name": "Stick Insect",
+    "slug": "stick-insect",
+    "url": "/animals/stick-insect.html"
+  },
+  {
+    "name": "Cockroach",
+    "slug": "cockroach",
+    "url": "/animals/cockroach.html"
+  },
+  {
+    "name": "Flea",
+    "slug": "flea",
+    "url": "/animals/flea.html"
+  }
+]
