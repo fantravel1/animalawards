@@ -21,7 +21,209 @@
     <!-- For Android/Chrome -->
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦁</text></svg>">
 
-    
+    <!-- Sitemap reference -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Animal Awards",
+        "alternateName": "Save Earth's Animals for Mars",
+        "url": "https://www.animalawards.com",
+        "logo": "https://www.animalawards.com/logo.png",
+        "description": "An interactive platform for voting on which animals should join humanity's journey to Mars. Educational content about animal intelligence, adaptability, and conservation.",
+        "sameAs": []
+    }
+    </script>
+
+    <!-- WebSite Schema with Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Animal Awards",
+        "alternateName": "Save Earth's Animals for Mars",
+        "url": "https://www.animalawards.com",
+        "description": "Vote for Earth's most worthy animals to join humanity's journey to Mars. Comprehensive animal catalog with rankings across intelligence, adaptability, survival skills, and more.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.animalawards.com/?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Earth's Animals for Mars - Complete Catalog",
+        "description": "Browse and vote for 280+ animal species ranked by Mars readiness. Compare intelligence, adaptability, survival skills, and social compatibility scores.",
+        "url": "https://www.animalawards.com/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Mars Mission Animal Candidates",
+            "description": "Comprehensive list of animals being considered for the Mars mission",
+            "numberOfItems": 280,
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Thing",
+                        "name": "Honey Bee",
+                        "url": "https://www.animalawards.com/animals/honey-bee.html",
+                        "description": "Essential pollinators with complex communication and hive mind intelligence"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Thing",
+                        "name": "Tardigrade",
+                        "url": "https://www.animalawards.com/animals/tardigrade.html",
+                        "description": "Survives space vacuum with extreme radiation tolerance"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "Thing",
+                        "name": "Octopus",
+                        "url": "https://www.animalawards.com/animals/octopus.html",
+                        "description": "Most intelligent invertebrate with problem-solving abilities"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                        "@type": "Thing",
+                        "name": "Dolphin",
+                        "url": "https://www.animalawards.com/animals/dolphin.html",
+                        "description": "Self-aware with complex language and emotional intelligence"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                        "@type": "Thing",
+                        "name": "Chimpanzee",
+                        "url": "https://www.animalawards.com/animals/chimpanzee.html",
+                        "description": "Closest human relative with tool use and learning ability"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Expanded FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What animals could survive on Mars?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Animals with high adaptability scores like tardigrades (which can survive space vacuum and extreme radiation), honey bees (essential for pollination in controlled environments), and extremophile species are top candidates. Our database ranks over 280 species by Mars readiness based on intelligence, adaptability, survival skills, and usefulness."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the most intelligent animal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "According to our rankings, chimpanzees, octopuses, dolphins, and orcas all score 100 on intelligence. These animals demonstrate tool use, problem-solving abilities, self-awareness, and complex communication. Elephants, wolves, and parrots also rank extremely high with scores of 90+."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you calculate Mars readiness scores?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mars readiness is calculated by averaging four key metrics: intelligence (cognitive abilities), adaptability (ability to adjust to new environments), survival skills (resilience and self-sufficiency), and usefulness (potential contribution to a Mars colony). Each metric is scored 0-100 based on scientific research."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the most adaptable animal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tardigrades score 100 on adaptability due to their ability to survive extreme temperatures, radiation, and even the vacuum of space. Other highly adaptable animals include chameleons (100), cockroaches, arctic foxes, and fennec foxes, all scoring 95+ on adaptability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which animals are best for Mars colonization?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best animals for Mars colonization combine high usefulness with adaptability. Honey bees (100 usefulness) are essential for crop pollination. Golden retrievers (95 usefulness) provide companionship and assistance. Leafcutter ants demonstrate sustainable agriculture. Tardigrades could survive Mars conditions with minimal support."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I vote for animals?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply browse our catalog of 280+ animals, click on any animal card to see detailed stats and facts, then click the 'Vote for Mars Mission' button. Your vote helps determine which animals are most supported by the community for the hypothetical Mars journey."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the Mars Ark Explorer game?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mars Ark Explorer is a free educational game where you discover animals, complete missions, play mini-games like Animal Trivia and Habitat Match, and build your own Mars Ark. Progress through 50+ levels, unlock achievements, and learn fascinating facts about animal species while planning humanity's interplanetary journey."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the cutest animals on the site?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Animals with 100 cuteness scores include Red Panda, Emperor Penguin, Quokka, Axolotl, Fennec Fox, Sugar Glider, Capybara, and Sloth. These animals are beloved for their adorable appearances and charming behaviors. You can sort our entire database by cuteness to explore all the cutest species."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.animalawards.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Animals",
+                "item": "https://www.animalawards.com/#animals"
+            }
+        ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
