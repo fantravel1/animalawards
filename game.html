@@ -269,6 +269,26 @@
             gap: 15px;
         }
 
+        .home-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(78, 205, 196, 0.3);
+        }
+
+        .home-button:hover {
+            background: rgba(78, 205, 196, 0.3);
+            transform: scale(1.05);
+            border-color: #4ECDC4;
+        }
+
         .player-info {
             display: flex;
             align-items: center;
@@ -887,6 +907,499 @@
             margin-bottom: 30px;
             line-height: 1.6;
         }
+
+        /* ============================================
+           COMPREHENSIVE MOBILE OPTIMIZATION
+           ============================================ */
+
+        /* Tablet breakpoint */
+        @media (max-width: 1024px) {
+            .game-container {
+                padding: 15px;
+            }
+
+            .hud {
+                padding: 15px;
+                gap: 12px;
+            }
+
+            .player-info {
+                gap: 12px;
+            }
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .xp-bar {
+                width: 150px;
+            }
+
+            .resources {
+                gap: 12px;
+            }
+
+            .resource {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+
+            .resource-icon {
+                font-size: 1.2rem;
+            }
+
+            .panel {
+                padding: 15px;
+            }
+
+            .panel-title {
+                font-size: 1.1rem;
+            }
+
+            .tab-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+
+            .minigame-card {
+                padding: 20px;
+            }
+
+            .minigame-icon {
+                font-size: 2.5rem;
+            }
+
+            .minigame-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Mobile breakpoint */
+        @media (max-width: 768px) {
+            .game-container {
+                padding: 10px;
+            }
+
+            /* HUD Mobile Layout */
+            .hud {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 12px;
+                gap: 10px;
+                border-radius: 12px;
+            }
+
+            .home-button {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+                border-radius: 10px;
+            }
+
+            .player-info {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .avatar {
+                width: 45px;
+                height: 45px;
+                font-size: 1.4rem;
+            }
+
+            .player-stats h3 {
+                font-size: 1rem;
+            }
+
+            .xp-bar {
+                width: 120px;
+                height: 8px;
+            }
+
+            .resources {
+                width: 100%;
+                justify-content: space-between;
+                gap: 8px;
+            }
+
+            .resource {
+                padding: 8px 10px;
+                border-radius: 15px;
+                flex: 1;
+                justify-content: center;
+                min-width: 0;
+            }
+
+            .resource-icon {
+                font-size: 1.1rem;
+            }
+
+            .resource-value {
+                font-size: 0.9rem;
+            }
+
+            /* Tab Navigation Mobile */
+            .tab-navigation {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .tab-btn {
+                padding: 10px 8px;
+                font-size: 0.75rem;
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            /* Panel Mobile */
+            .panel {
+                padding: 12px;
+                border-radius: 12px;
+            }
+
+            .panel-title {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+
+            /* Mini-games Grid Mobile */
+            .minigame-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .minigame-card {
+                padding: 18px;
+                border-radius: 12px;
+            }
+
+            .minigame-icon {
+                font-size: 2.2rem;
+                margin-bottom: 10px;
+            }
+
+            .minigame-title {
+                font-size: 1.05rem;
+                margin-bottom: 6px;
+            }
+
+            .minigame-description {
+                font-size: 0.85rem;
+            }
+
+            /* Animal Discovery Grid Mobile */
+            .animal-discovery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .animal-discovery-card {
+                padding: 15px;
+                border-radius: 12px;
+            }
+
+            .animal-emoji {
+                font-size: 2.5rem;
+                margin-bottom: 8px;
+            }
+
+            .animal-name {
+                font-size: 1rem;
+            }
+
+            /* Ark Slots Mobile */
+            .ark-slots {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            .ark-slot {
+                font-size: 1.8rem;
+                border-radius: 8px;
+            }
+
+            /* Mission Items Mobile */
+            .mission-item {
+                padding: 12px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+            }
+
+            .mission-title {
+                font-size: 0.95rem;
+            }
+
+            /* Achievement Grid Mobile */
+            .achievement-grid {
+                grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+                gap: 8px;
+            }
+
+            .achievement {
+                font-size: 1.5rem;
+                border-radius: 8px;
+            }
+
+            /* Modal Mobile */
+            .modal-content {
+                padding: 20px;
+                border-radius: 15px;
+                margin: 20px auto;
+                max-height: 90vh;
+            }
+
+            .close {
+                top: 10px;
+                right: 15px;
+                font-size: 1.5rem;
+            }
+
+            /* Quiz Mobile */
+            .quiz-question {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+
+            .quiz-options {
+                gap: 10px;
+            }
+
+            .quiz-option {
+                padding: 12px;
+                font-size: 0.95rem;
+            }
+
+            /* Notifications Mobile */
+            .notification {
+                top: auto;
+                bottom: 20px;
+                right: 10px;
+                left: 10px;
+                padding: 15px 20px;
+                font-size: 0.95rem;
+                text-align: center;
+            }
+
+            /* Story Chapter Mobile */
+            .story-chapter {
+                padding: 20px;
+            }
+
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+
+            .chapter-content {
+                font-size: 1rem;
+            }
+
+            /* Button Mobile */
+            .btn-primary, .btn-secondary {
+                padding: 12px 20px;
+                font-size: 0.95rem;
+                width: 100%;
+            }
+
+            /* Educational Card Mobile */
+            .edu-card {
+                padding: 18px;
+            }
+
+            .edu-title {
+                font-size: 1.2rem;
+            }
+
+            .edu-content {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Small phone breakpoint */
+        @media (max-width: 480px) {
+            .game-container {
+                padding: 8px;
+            }
+
+            .hud {
+                padding: 10px;
+            }
+
+            .avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .player-stats h3 {
+                font-size: 0.9rem;
+            }
+
+            .xp-bar {
+                width: 100px;
+            }
+
+            .resource {
+                padding: 6px 8px;
+            }
+
+            .resource-icon {
+                font-size: 1rem;
+            }
+
+            .resource-value {
+                font-size: 0.8rem;
+            }
+
+            .tab-navigation {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tab-btn {
+                padding: 8px 6px;
+                font-size: 0.7rem;
+            }
+
+            .animal-discovery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .animal-discovery-card {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-align: left;
+            }
+
+            .animal-discovery-card .animal-emoji {
+                font-size: 2.5rem;
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+
+            .animal-discovery-card .animal-name {
+                text-align: left;
+            }
+
+            .ark-slots {
+                grid-template-columns: repeat(5, 1fr);
+                gap: 6px;
+            }
+
+            .ark-slot {
+                font-size: 1.5rem;
+            }
+
+            .minigame-card {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-align: left;
+                padding: 15px;
+            }
+
+            .minigame-card .minigame-icon {
+                font-size: 2rem;
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+
+            .minigame-card .minigame-title {
+                margin-bottom: 4px;
+                text-align: left;
+            }
+
+            .minigame-card .minigame-description {
+                text-align: left;
+            }
+
+            .modal-content {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            /* Touch-friendly tap targets */
+            .tab-btn,
+            .btn-primary,
+            .btn-secondary,
+            .minigame-card,
+            .animal-discovery-card,
+            .mission-item,
+            .achievement,
+            .ark-slot,
+            .quiz-option {
+                min-height: 44px;
+            }
+        }
+
+        /* Landscape phone optimization */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .game-main {
+                grid-template-columns: 250px 1fr;
+            }
+
+            .sidebar-right {
+                display: none;
+            }
+
+            .modal-content {
+                max-height: 85vh;
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .animal-discovery-card:hover,
+            .minigame-card:hover,
+            .mission-item:hover,
+            .tab-btn:hover,
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                transform: none;
+            }
+
+            .animal-discovery-card:active,
+            .minigame-card:active,
+            .mission-item:active {
+                transform: scale(0.98);
+                opacity: 0.9;
+            }
+
+            .tab-btn:active,
+            .btn-primary:active,
+            .btn-secondary:active {
+                transform: scale(0.95);
+            }
+        }
+
+        /* Safe area padding for notched phones */
+        @supports (padding: max(0px)) {
+            .game-container {
+                padding-left: max(10px, env(safe-area-inset-left));
+                padding-right: max(10px, env(safe-area-inset-right));
+                padding-bottom: max(10px, env(safe-area-inset-bottom));
+            }
+        }
+
+        /* Dark mode preference (optional enhancement) */
+        @media (prefers-color-scheme: dark) {
+            .modal-content {
+                background: linear-gradient(135deg, #1a1a2e, #16213e);
+            }
+        }
+
+        /* Reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -895,6 +1408,9 @@
     <div class="game-container">
         <!-- Top HUD -->
         <div class="hud">
+            <a href="index.html" class="home-button" title="Back to Home">
+                <span>🏠</span>
+            </a>
             <div class="player-info">
                 <div class="avatar">🚀</div>
                 <div class="player-stats">
