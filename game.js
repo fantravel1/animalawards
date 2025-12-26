@@ -13,7 +13,8 @@ let gameState = {
         level: 1,
         xp: 0,
         rank: 'Cadet Explorer',
-        playTimeMinutes: 0
+        playTimeMinutes: 0,
+        totalScore: 0
     },
 
     // Resources
@@ -43,12 +44,46 @@ let gameState = {
     currentChapter: 1,
     unlockedChapters: new Set([1]),
 
+    // Daily Challenges
+    dailyChallenge: null,
+    lastDailyDate: null,
+
+    // Events
+    activeEvent: null,
+
+    // Leaderboard
+    leaderboardEntry: null,
+
     // Statistics
     stats: {
         gamesPlayed: 0,
         missionsCompleted: 0,
         triviaCorrect: 0,
-        triviaTotal: 0
+        triviaTotal: 0,
+        habitatMatchWins: 0,
+        ecosystemsBuilt: 0,
+        conservationChallengesCompleted: 0,
+        bossesDefeated: 0,
+        dailyChallengesCompleted: 0
+    },
+
+    // Settings
+    settings: {
+        soundEnabled: true,
+        musicEnabled: true
+    },
+
+    // Prestige System
+    prestige: {
+        level: 0,
+        totalPrestiges: 0,
+        permanentBonuses: {
+            xpMultiplier: 1.0,
+            resourceMultiplier: 1.0,
+            creditMultiplier: 1.0,
+            startingResources: 0,
+            unlockSpeed: 0
+        }
     }
 };
 
@@ -66,12 +101,31 @@ function loadGame() {
             gameState.unlockedChapters = new Set(loadedState.unlockedChapters || [1]);
 
             // Copy other properties
-            gameState.player = loadedState.player || gameState.player;
+            gameState.player = { ...gameState.player, ...loadedState.player };
             gameState.resources = loadedState.resources || gameState.resources;
             gameState.arkAnimals = loadedState.arkAnimals || [];
             gameState.activeMissions = loadedState.activeMissions || [];
             gameState.currentChapter = loadedState.currentChapter || 1;
-            gameState.stats = loadedState.stats || gameState.stats;
+            gameState.stats = { ...gameState.stats, ...loadedState.stats };
+
+            // Enhanced features
+            gameState.dailyChallenge = loadedState.dailyChallenge || null;
+            gameState.lastDailyDate = loadedState.lastDailyDate || null;
+            gameState.activeEvent = loadedState.activeEvent || null;
+            gameState.leaderboardEntry = loadedState.leaderboardEntry || null;
+            gameState.settings = { ...gameState.settings, ...loadedState.settings };
+
+            // Prestige system
+            if (loadedState.prestige) {
+                gameState.prestige = {
+                    ...gameState.prestige,
+                    ...loadedState.prestige,
+                    permanentBonuses: {
+                        ...gameState.prestige.permanentBonuses,
+                        ...(loadedState.prestige.permanentBonuses || {})
+                    }
+                };
+            }
 
             showNotification('Welcome back, Explorer! 🚀');
         } catch (e) {
@@ -109,7 +163,9 @@ const RANK_NAMES = [
     'Junior Biologist',
     'Wildlife Specialist',
     'Conservation Expert',
-    'Ark Commander'
+    'Ark Commander',
+    'Master Naturalist',
+    'Legendary Guardian'
 ];
 
 function calculateXPForLevel(level) {
@@ -118,6 +174,7 @@ function calculateXPForLevel(level) {
 
 function addXP(amount) {
     gameState.player.xp += amount;
+    gameState.player.totalScore += amount;
     const maxXP = calculateXPForLevel(gameState.player.level);
 
     // Level up check
