@@ -233,7 +233,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
             color: #333;
         }
@@ -245,6 +245,268 @@
             overflow-x: hidden;
         }
 
+        /* ============================================
+           GAME HERO SECTION - Primary CTA
+           ============================================ */
+        .game-hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border-radius: 30px;
+            padding: 50px 40px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 3px solid rgba(78, 205, 196, 0.4);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4),
+                        0 0 100px rgba(78, 205, 196, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .game-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234ECDC4' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .floating-emojis {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-emoji {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-emoji:nth-child(1) { left: 5%; top: 20%; animation-delay: 0s; }
+        .floating-emoji:nth-child(2) { left: 15%; top: 70%; animation-delay: 1s; }
+        .floating-emoji:nth-child(3) { left: 85%; top: 15%; animation-delay: 2s; }
+        .floating-emoji:nth-child(4) { left: 90%; top: 65%; animation-delay: 0.5s; }
+        .floating-emoji:nth-child(5) { left: 75%; top: 80%; animation-delay: 1.5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .game-hero-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .game-hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .game-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E88);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.7); }
+        }
+
+        .game-hero h2 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 800;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-hero h2 span {
+            background: linear-gradient(45deg, #4ECDC4, #44A08D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .game-hero-description {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .game-features {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .game-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        .game-feature-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(78, 205, 196, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .play-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(45deg, #4ECDC4, #44A08D);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .play-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(78, 205, 196, 0.5);
+        }
+
+        .play-button-icon {
+            font-size: 1.5rem;
+            animation: rocket-bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes rocket-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .game-hero-visual {
+            flex: 0 0 300px;
+            position: relative;
+        }
+
+        .game-preview {
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            border: 2px solid rgba(78, 205, 196, 0.3);
+        }
+
+        .game-preview-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .game-preview-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .game-preview-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .game-preview-dot:nth-child(1) { background: #FF6B6B; }
+        .game-preview-dot:nth-child(2) { background: #FFD93D; }
+        .game-preview-dot:nth-child(3) { background: #4ECDC4; }
+
+        .game-preview-title {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            flex: 1;
+            text-align: center;
+        }
+
+        .game-preview-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .preview-animal {
+            aspect-ratio: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .preview-animal:hover {
+            background: rgba(78, 205, 196, 0.2);
+            transform: scale(1.1);
+        }
+
+        .game-stats-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .game-stat-mini {
+            text-align: center;
+        }
+
+        .game-stat-value {
+            color: #4ECDC4;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .game-stat-label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.75rem;
+        }
+
+        /* ============================================
+           HEADER SECTION
+           ============================================ */
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -252,7 +514,7 @@
             backdrop-filter: blur(20px);
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .header h1 {
@@ -260,6 +522,7 @@
             background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 10px;
             font-weight: 800;
         }
@@ -291,6 +554,28 @@
         .stat-label {
             color: #666;
             font-size: 0.9rem;
+        }
+
+        /* Mobile responsive for game hero */
+        @media (max-width: 768px) {
+            .game-hero {
+                padding: 30px 20px;
+            }
+            .game-hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .game-hero-visual {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            .game-features {
+                justify-content: center;
+            }
+            .floating-emoji {
+                font-size: 1.5rem;
+            }
         }
 
         .controls {
@@ -622,18 +907,100 @@
     
 <body>
     <div class="container">
-        <header class="header">
-            <div style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); padding: 20px; border-radius: 15px; margin-bottom: 20px; text-align: center;">
-                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 10px;">🎮 NEW: Educational Game Mode!</h3>
-                <p style="color: white; opacity: 0.95; margin-bottom: 15px;">Discover animals, complete missions, build your ark in an interactive adventure!</p>
-                <a href="game.html" style="display: inline-block; background: white; color: #FF6B6B; padding: 15px 30px; border-radius: 25px; font-weight: bold; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    🚀 Play Mars Ark Explorer →
-                </a>
+        <!-- GAME HERO SECTION -->
+        <section class="game-hero">
+            <div class="floating-emojis">
+                <span class="floating-emoji">🦁</span>
+                <span class="floating-emoji">🐬</span>
+                <span class="floating-emoji">🦋</span>
+                <span class="floating-emoji">🐙</span>
+                <span class="floating-emoji">🦊</span>
             </div>
+
+            <div class="game-hero-content">
+                <div class="game-hero-text">
+                    <div class="game-badge">
+                        <span>🎮</span>
+                        <span>FREE TO PLAY</span>
+                    </div>
+
+                    <h2>Mars Ark <span>Explorer</span></h2>
+
+                    <p class="game-hero-description">
+                        Embark on an epic educational adventure! Discover 280+ animal species, complete challenging missions,
+                        play 7 unique mini-games, and build the ultimate Mars Ark to save Earth's biodiversity.
+                    </p>
+
+                    <div class="game-features">
+                        <div class="game-feature">
+                            <div class="game-feature-icon">🔍</div>
+                            <span>280+ Species</span>
+                        </div>
+                        <div class="game-feature">
+                            <div class="game-feature-icon">🎯</div>
+                            <span>50+ Missions</span>
+                        </div>
+                        <div class="game-feature">
+                            <div class="game-feature-icon">🏆</div>
+                            <span>Achievements</span>
+                        </div>
+                        <div class="game-feature">
+                            <div class="game-feature-icon">👑</div>
+                            <span>Prestige System</span>
+                        </div>
+                    </div>
+
+                    <a href="game.html" class="play-button">
+                        <span class="play-button-icon">🚀</span>
+                        <span>Play Now - It's Free!</span>
+                    </a>
+                </div>
+
+                <div class="game-hero-visual">
+                    <div class="game-preview">
+                        <div class="game-preview-header">
+                            <div class="game-preview-dots">
+                                <div class="game-preview-dot"></div>
+                                <div class="game-preview-dot"></div>
+                                <div class="game-preview-dot"></div>
+                            </div>
+                            <div class="game-preview-title">Mars Ark Explorer</div>
+                        </div>
+                        <div class="game-preview-content">
+                            <div class="preview-animal">🦁</div>
+                            <div class="preview-animal">🐙</div>
+                            <div class="preview-animal">🦋</div>
+                            <div class="preview-animal">🐬</div>
+                            <div class="preview-animal">🦊</div>
+                            <div class="preview-animal">🐘</div>
+                            <div class="preview-animal">🦅</div>
+                            <div class="preview-animal">🐢</div>
+                            <div class="preview-animal">🐝</div>
+                        </div>
+                        <div class="game-stats-row">
+                            <div class="game-stat-mini">
+                                <div class="game-stat-value">7</div>
+                                <div class="game-stat-label">Mini-Games</div>
+                            </div>
+                            <div class="game-stat-mini">
+                                <div class="game-stat-value">50+</div>
+                                <div class="game-stat-label">Levels</div>
+                            </div>
+                            <div class="game-stat-mini">
+                                <div class="game-stat-value">∞</div>
+                                <div class="game-stat-label">Fun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="header">
             <h1>🚀 Ultimate Animal Catalog 🌍</h1>
             <h2 style="font-size: 1.4rem; color: #666; margin-bottom: 20px; font-weight: 400;">Interactive Species Database & Mars Colonization Voting Platform</h2>
             <p>Help save Earth's most precious creatures for humanity's journey to Mars</p>
-            
+
             <div class="stats">
                 <div class="stat">
                     <div class="stat-number" id="totalAnimals">-</div>
